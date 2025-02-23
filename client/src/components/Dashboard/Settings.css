@@ -1,0 +1,208 @@
+:root {
+  --text-primary: #333;
+  --text-secondary: #666;
+  --bg-primary: #f5f5f5;
+  --bg-secondary: #ffffff;
+  --border-color: #e0e0e0;
+  --success-color: #4CAF50;
+  --primary-color: #1a73e8;
+  --hover-color: #f8f9fa;
+}
+
+/* Settings button */
+.settings-btn {
+  margin: 0 8px;
+  padding: 10px;
+  background: none;
+  border: none;
+  color: var(--text-primary, #333);
+  cursor: pointer;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.settings-btn:hover {
+  background-color: var(--hover-color);
+}
+
+.settings-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.settings-modal {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border-radius: 8px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  animation: modalFadeIn 0.3s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.settings-header {
+  padding: 24px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings-header h2 {
+  margin: 0;
+  font-size: 22px;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.close-btn:hover {
+  background-color: var(--hover-color);
+}
+
+.close-btn svg {
+  font-size: 20px;
+}
+
+.settings-content {
+  padding: 24px;
+}
+
+.setting-item {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.setting-item:hover {
+  background-color: var(--hover-color);
+}
+
+.setting-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-primary);
+}
+
+.setting-label svg {
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.setting-label label {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.setting-item select {
+  padding: 10px 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 120px;
+}
+
+.setting-item select:hover {
+  border-color: var(--primary-color);
+}
+
+.setting-item select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+/* Switch styles */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--border-color);
+  transition: .4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: .3s cubic-bezier(0.4, 0.0, 0.2, 1);
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+input:checked + .slider {
+  background-color: var(--primary-color);
+}
+
+input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
