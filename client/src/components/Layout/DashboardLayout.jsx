@@ -23,7 +23,7 @@ const DashboardLayout = ({ children }) => {
     <div className="dashboard-layout">
       <nav className="sidebar">
         <div className="logo">
-          <h2>Board.</h2>
+          <h2>BOARD.</h2>
         </div>
         <ul className="nav-links">
           <li className={location.pathname === '/dashboard' ? 'active' : ''}>

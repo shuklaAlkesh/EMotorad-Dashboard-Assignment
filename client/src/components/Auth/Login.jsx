@@ -66,7 +66,7 @@ const Login = () => {
             <form onSubmit={handleSubmit} className="auth-form" noValidate>
               <div className="form-group">
                 <div className="input-icon">
-                  <FiMail className="icon" />
+                  {/* <FiMail className="icon" /> */}
                   <input
                     type="email"
                     placeholder="Enter your email"
@@ -78,7 +78,7 @@ const Login = () => {
               </div>
               <div className="form-group">
                 <div className="input-icon">
-                  <FiLock className="icon" />
+                  {/* <FiLock className="icon" /> */}
                   <input
                     type="password"
                     placeholder="Enter your password"
