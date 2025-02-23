@@ -18,14 +18,14 @@ This project is a **full-stack** dashboard built as part of the EMotorad Full St
 Here are some snapshots of the dashboard:
 
 <p align="center">
-  <img src="images/1.png" width="300">
-  <img src="images/2.png" width="300">
+  <img src="images/1.png" width="500" hight="500">
+  <img src="images/2.png" width="500" hight="500">
 </p>
 
 <p align="center">
-  <img src="images/3.png" width="300">
-  <img src="images/4.png" width="300">
-  <img src="images/5.png" width="300">
+  <img src="images/3.png" width="500" hight="500">
+  <img src="images/4.png" width="500" hight="500">
+  <img src="images/5.png" width="500" hight="500">
 </p>
 
 ---
