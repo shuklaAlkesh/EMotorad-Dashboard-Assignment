@@ -10,7 +10,7 @@ This project is a **full-stack** dashboard built as part of the EMotorad Full St
 - **RESTful API for CRUD Operations**
 - **Responsive UI Across Devices**
 - **Efficient API Integration Using Axios**
-- **Database Management (SQL/NoSQL)**
+- **Database Management (MongoDB)**
 
 ---
 
