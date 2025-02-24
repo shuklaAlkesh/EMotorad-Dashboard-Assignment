@@ -7,7 +7,8 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'http://localhost:5002',
+        //target: 'http://localhost:5002',
+        target: 'https://emotorad-dashboard-assignment-backened.onrender.com',
         changeOrigin: true,
       },
     }
